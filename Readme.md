@@ -21,8 +21,16 @@ Traditional AI outputs are non-deterministic strings. If an API expects `{"date"
    - Windows: `venv\Scripts\activate`
    - Mac/Linux: `source venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
-5. Create a `.env` file in the root directory and add your API key:
-   `OPENAI_API_KEY=your_api_key_here`
+5. Configure environment variables in .env:
+   ```bash
+   OLLAMA_API_KEY=your_key
+   ```
+6. Execute containerized pipeline:
+   ```bash
+   docker build -t llm-structured-email-parser .
+   docker run --env-file .env llm-structured-email-parser
+   ```
+
 
 ## Usage
 Run the main extraction script to see the parser in action:
