@@ -6,7 +6,11 @@ def run_tests():
     test_cases = [
         {
             "name": "Standard Meeting Request",
-            "email": "Can we schedule a kick-off call for the new marketing campaign? Let's aim for next Tuesday at 2:00 PM via Google Meet. Please invite marketing@company.com and Sarah.",
+            "email": (
+                "Can we schedule a kick-off call for the new marketing campaign? "
+                "Let's aim for next Tuesday at 2:00 PM via Google Meet. "
+                "Please invite marketing@company.com and Sarah."
+            ),
         },
         {
             "name": "Not an Event (Action Required = False)",
