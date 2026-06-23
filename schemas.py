@@ -24,8 +24,7 @@ class CalendarEvent(BaseModel):
     time: Optional[str] = Field(
         default=None,
         description=(
-            "The start time of the event. Format: HH:MM AM/PM. "
-            "Null if action_required is false."
+            "The start time of the event. Format: HH:MM AM/PM. " "Null if action_required is false."
         ),
     )
     location: Optional[str] = Field(
