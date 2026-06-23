@@ -14,11 +14,13 @@ def run_tests():
         },
         {
             "name": "Not an Event (Action Required = False)",
-            "email": "Hey everyone, just sharing the attached Q3 financial report for your review. No need to reply. Thanks!",
+            "email": "Hey everyone, just sharing the attached Q3 financial report for your review."
+            " No need to reply. Thanks!",
         },
         {
             "name": "Vague Details (The 'Tomorrow' Problem)",
-            "email": "Let's grab lunch tomorrow to discuss the contract. Same place as last time.",
+            "email": "Let's grab lunch tomorrow to discuss the contract. "
+            "Same place as last time.",
         },
     ]
 

@@ -32,7 +32,8 @@ def parse_email_to_event(email_text: str) -> CalendarEvent:
                     "You are a precise data extraction algorithm. Extract calendar event details "
                     "from the provided email into a flat JSON object. "
                     "CRITICAL INSTRUCTIONS: "
-                    "1. If the email does not contain a meeting request, set action_required to false "
+                    "1. If the email does not contain a meeting request, "
+                    "set action_required to false "
                     "and leave other fields null. "
                     "2. Do NOT nest the output inside an 'event_details' key. Use the exact keys "
                     "provided in the schema at the root level."
@@ -75,7 +76,8 @@ if __name__ == "__main__":
     # Mock Email Data
     raw_email = """
     Hey team,
-    Just wanted to sync up on the Q3 roadmap. Let's grab coffee next Thursday at 10:30 AM at the Starbucks on Main Street. 
+    Just wanted to sync up on the Q3 roadmap. Let's grab coffee next Thursday "
+    "at 10:30 AM at the Starbucks on Main Street. 
     Sarah and John (john.doe@example.com) will be joining us. 
     Let me know if that works!
     - Alex
