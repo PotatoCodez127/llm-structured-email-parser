@@ -12,7 +12,9 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: pip install pytest black ruff
+        run: |
+          pip install pytest black ruff
+          pip install -r requirements.txt
       - name: Run Linting
         run: |
           black --check .
