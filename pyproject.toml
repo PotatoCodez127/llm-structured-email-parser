@@ -1,0 +1,26 @@
+[project]
+name = "llm-structured-email-parser"
+version = "0.1.0"
+description = "Deterministic email-to-calendar event parsing using Pydantic and LLMs."
+dependencies = [
+    "ollama>=0.6.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"] # Pyflakes, pycodestyle, isort
+
+[tool.isort]
+profile = "black"
+known_first_party = ["main", "schemas"]
+line_length = 100
